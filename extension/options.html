@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bridge.ai Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="stack">
+      <section class="card">
+        <header class="brand-header">
+          <img class="brand-logo" src="assets/bridge-ai-logo.svg" alt="bridge.ai logo" />
+          <div>
+            <p class="eyebrow">bridge.ai</p>
+            <h1>Cursor Settings</h1>
+            <p class="subtitle">Tune how the cursor snaps and behaves.</p>
+          </div>
+        </header>
+
+        <section class="section">
+          <label for="snapRadius">Snap radius (px)</label>
+          <div class="range">
+            <input id="snapRadius" type="range" min="80" max="260" step="10" />
+            <span id="snapRadiusValue"></span>
+          </div>
+          <p class="helper">Controls how close the pointer must be to snap.</p>
+        </section>
+
+        <section class="section">
+          <label for="releaseRadius">Release radius (px)</label>
+          <div class="range">
+            <input id="releaseRadius" type="range" min="120" max="320" step="10" />
+            <span id="releaseRadiusValue"></span>
+          </div>
+          <p class="helper">Controls how far you can drift before snapping releases.</p>
+        </section>
+
+        <section class="section">
+          <label for="hysteresisMargin">Hysteresis margin (px)</label>
+          <div class="range">
+            <input id="hysteresisMargin" type="range" min="10" max="120" step="5" />
+            <span id="hysteresisMarginValue"></span>
+          </div>
+          <p class="helper">Larger values make target switching less sensitive.</p>
+        </section>
+
+        <section class="section">
+          <button id="save">Save settings</button>
+          <span id="status" class="status"></span>
+        </section>
+      </section>
+
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>

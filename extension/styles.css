@@ -1,0 +1,58 @@
+:root {
+  --magnetic-cursor-color: #34d399;
+  --magnetic-cursor-outer: rgba(52, 211, 153, 0.35);
+  --magnetic-cursor-inner: rgba(52, 211, 153, 0.9);
+  --magnetic-cursor-outline: rgba(52, 211, 153, 0.6);
+}
+
+.magnetic-cursor-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2147483647;
+}
+
+.magnetic-cursor-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--magnetic-cursor-inner);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px var(--magnetic-cursor-outer);
+}
+
+.magnetic-cursor-ring {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 2px solid var(--magnetic-cursor-color);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 30px var(--magnetic-cursor-outer);
+  opacity: 0.8;
+}
+
+.magnetic-cursor-target {
+  outline: 2px solid var(--magnetic-cursor-outline) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 24px var(--magnetic-cursor-outer) !important;
+}
+
+.magnetic-cursor-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font: 12px/1.2 system-ui, sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  z-index: 2147483647;
+}
+
