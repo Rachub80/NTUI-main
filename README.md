@@ -61,8 +61,6 @@ Extension controls:
 ## Voice keyword cheatsheet (demo page)
 The demo page reacts to simple keywords in your phrase:
 - Add to cart: say `add`, `add to cart`, `add to bag`, `buy`, or `purchase`
-- Compare: say `compare`
-- Size guide: say `size guide`, `size chart`, or `sizing`
 - Delete from cart: say `delete`, `remove`, or `clear` (e.g., "remove 2 stadium mesh pants")
 
 Tip: include the product name in the phrase, e.g. "add to cart stadium mesh pants".
